@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\DEMO_ASP_NET_HK5\\doanasp\\WebApp\\DoAnAsp\\DoAnAsp.csproj": {}
+    "C:\\Users\\Quoc Trung\\Documents\\GitHub\\clone-TMDT\\DoAnAsp\\DoAnAsp.csproj": {}
   },
   "projects": {
-    "D:\\DEMO_ASP_NET_HK5\\doanasp\\WebApp\\DoAnAsp\\DoAnAsp.csproj": {
+    "C:\\Users\\Quoc Trung\\Documents\\GitHub\\clone-TMDT\\DoAnAsp\\DoAnAsp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\DEMO_ASP_NET_HK5\\doanasp\\WebApp\\DoAnAsp\\DoAnAsp.csproj",
+        "projectUniqueName": "C:\\Users\\Quoc Trung\\Documents\\GitHub\\clone-TMDT\\DoAnAsp\\DoAnAsp.csproj",
         "projectName": "DoAnAsp",
-        "projectPath": "D:\\DEMO_ASP_NET_HK5\\doanasp\\WebApp\\DoAnAsp\\DoAnAsp.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\DEMO_ASP_NET_HK5\\doanasp\\WebApp\\DoAnAsp\\obj\\",
+        "projectPath": "C:\\Users\\Quoc Trung\\Documents\\GitHub\\clone-TMDT\\DoAnAsp\\DoAnAsp.csproj",
+        "packagesPath": "C:\\Users\\Quoc Trung\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Quoc Trung\\Documents\\GitHub\\clone-TMDT\\DoAnAsp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Quoc Trung\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -41,6 +41,10 @@
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[5.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[3.1.10, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",

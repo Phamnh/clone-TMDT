@@ -1,0 +1,72 @@
+﻿@model DoAnAsp.Areas.Admin.Models.SanPhamModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>SanPhamModel</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.TenSP)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.TenSP)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Anh)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Anh)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Gia)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Gia)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Donvitinh)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Donvitinh)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Soluongton)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Soluongton)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.IdNCC)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.IdNCC)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.IdLSP)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.IdLSP)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Mota)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Mota)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Trangthai)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Trangthai)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.IdSP">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

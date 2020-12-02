@@ -255,9 +255,10 @@ namespace DoAnAsp.Migrations
 
             modelBuilder.Entity("DoAnAsp.Areas.Admin.Views.AdminModel", b =>
                 {
-                    b.Property<string>("Username")
-                        .HasMaxLength(20)
-                        .HasColumnType("nvarchar(20)");
+                    b.Property<int>("IdAdmin")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .UseIdentityColumn();
 
                     b.Property<string>("Email")
                         .HasColumnType("nvarchar(max)");
@@ -274,7 +275,12 @@ namespace DoAnAsp.Migrations
                     b.Property<int>("Sdt")
                         .HasColumnType("int");
 
-                    b.HasKey("Username");
+                    b.Property<string>("Username")
+                        .IsRequired()
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)");
+
+                    b.HasKey("IdAdmin");
 
                     b.ToTable("admin");
                 });

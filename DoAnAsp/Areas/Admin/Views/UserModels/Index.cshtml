@@ -1,0 +1,61 @@
+﻿@model IEnumerable<DoAnAsp.Areas.Admin.Models.UserModel>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="product-status mg-b-30">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="product-status-wrap">
+                    <h4>Products List</h4>
+                    <div class="add-product">
+                        <a asp-action="Create">Add User</a>
+                    </div>
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>Họ tên</th>
+                            <th>email</th>
+                            <th>Số điện thoại</th>
+                            <th>Địa chỉ</th>
+                            <th>Username</th>
+                            <th>Password</th>
+                            <th>Trạng thái</th>
+                            <th>Chức năng</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.HotenUser)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.EmailUser)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.SdtUser)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.DiachiUser)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.UsernameUser)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.PasswordUser)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.TrangthaiUser)
+                                    </td>
+                                    <td>
+                                        <a asp-action="Edit" asp-route-id="@item.IdUser" data-toggle="tooltip" title="Edit" class="pd-setting-ed"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                                        <a asp-action="Delete" asp-route-id="@item.IdUser" data-toggle="tooltip" title="Trash" class="pd-setting-ed"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>

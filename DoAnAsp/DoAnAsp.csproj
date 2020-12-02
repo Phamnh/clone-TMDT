@@ -5,13 +5,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Areas\Admin\Controllers\" />
-    <Folder Include="Areas\Admin\Views\" />
-    <Folder Include="wwwroot\template\admin\" />
     <Folder Include="wwwroot\template\user\" />
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="3.1.10" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.0">
       <PrivateAssets>all</PrivateAssets>

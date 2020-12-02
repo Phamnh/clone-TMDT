@@ -1,0 +1,54 @@
+﻿@model DoAnAsp.Areas.Admin.Models.ChiTietHoaDonModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>ChiTietHoaDonModel</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="IdCTHD" />
+            <div class="form-group">
+                <label asp-for="Soluong" class="control-label"></label>
+                <input asp-for="Soluong" class="form-control" />
+                <span asp-validation-for="Soluong" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Tongtien" class="control-label"></label>
+                <input asp-for="Tongtien" class="form-control" />
+                <span asp-validation-for="Tongtien" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="IdHD" class="control-label"></label>
+                <input asp-for="IdHD" class="form-control" />
+                <span asp-validation-for="IdHD" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="IdSP" class="control-label"></label>
+                <input asp-for="IdSP" class="form-control" />
+                <span asp-validation-for="IdSP" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Trangthai" /> @Html.DisplayNameFor(model => model.Trangthai)
+                </label>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

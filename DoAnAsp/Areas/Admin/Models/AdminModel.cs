@@ -9,6 +9,7 @@ namespace DoAnAsp.Areas.Admin.Views
     public class AdminModel
     {
         [Key]
+        public int IdAdmin { get; set; }
         [Required(AllowEmptyStrings = false, ErrorMessage = "Please enter a valid Username")]
         [StringLength(20)]
         public string Username { get; set; }

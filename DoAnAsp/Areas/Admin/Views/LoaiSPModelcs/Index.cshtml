@@ -1,0 +1,41 @@
+﻿@model IEnumerable<DoAnAsp.Areas.Admin.Models.LoaiSPModelcs>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="product-status mg-b-30">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="product-status-wrap">
+                    <h4>Products List</h4>
+                    <div class="add-product">
+                        <a asp-action="Create">Add loại sản phẩm</a>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Tên loại sản phẩm</th>
+                                <th>Trạng thái</th>
+                                <th>Chức năng</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                            <tr>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.TenLSP)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Trangthai)
+                                </td>
+                                <td>
+                                    <a asp-action="Edit" asp-route-id="@item.IdLSP" data-toggle="tooltip" title="Edit" class="pd-setting-ed"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                                    <a asp-action="Delete" asp-route-id="@item.IdLSP" data-toggle="tooltip" title="Trash" class="pd-setting-ed"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
+                                </td>
+                            </tr>
+                            }
+                        </tbody>
+                    </table>

@@ -1,0 +1,60 @@
+﻿@model DoAnAsp.Areas.Admin.Models.UserModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>UserModel</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.HotenUser)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.HotenUser)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.EmailUser)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.EmailUser)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.SdtUser)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.SdtUser)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DiachiUser)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DiachiUser)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.UsernameUser)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.UsernameUser)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.PasswordUser)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.PasswordUser)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.TrangthaiUser)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.TrangthaiUser)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.IdUser">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
