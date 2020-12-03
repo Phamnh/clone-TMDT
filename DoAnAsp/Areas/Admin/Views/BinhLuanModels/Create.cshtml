@@ -4,24 +4,26 @@
     ViewData["Title"] = "Create";
 }
 
+<<<<<<< Updated upstream
 <h1 style="color: white; padding-left:20px;">Create</h1>
 
 <h4 style="color: white; padding-left:20px;">BinhLuanModel</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
-        <form asp-action="Create" style="color: white; padding-left:20px;">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-<<<<<<< HEAD
-            <div class="form-group">
-                <label asp-for="Anh" class="control-label"></label>
-                <input asp-for="Anh" class="form-control" style="border: solid 1px white;"/>
-                <span asp-validation-for="Anh" class="text-danger"></span>
 =======
-            <div class="custom-file">
+<h1 style="color: white; padding-left: 20px;">Create</h1>
+
+<h4 style="color: white; padding-left: 20px;">BinhLuanModel</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create" style="padding-left:20px; color:white;">
+>>>>>>> Stashed changes
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
                 <label asp-for="Anh" for="ful" class="custom-file-label">Choose Image</label>
-                <input type="file" name="ful" id="ful" class="custom-file-input" />
->>>>>>> dev1
+                <input type="file" name="ful" id="ful" class="custom-file-input" style="border: solid 1px white;"/>
             </div>
             <div class="form-group">
                 <label asp-for="Ten" class="control-label"></label>
@@ -40,11 +42,8 @@
             </div>
             <div class="form-group">
                 <label asp-for="IdSP" class="control-label"></label>
-<<<<<<< HEAD
-                <select asp-for="IdSP" class ="form-control" asp-items="ViewBag.IdSP" style="border: solid 1px white;"></select>
-=======
-                <select asp-for="IdSP" class="form-control" asp-items="@(new SelectList(ViewBag.IdSP,"IdSP","TenSP"))"></select>
->>>>>>> dev1
+                <select asp-for="IdSP" class="form-control" asp-items="@(new SelectList(ViewBag.IdSP,"IdSP","TenSP"))"
+                        style="border: solid 1px white;"></select>
             </div>
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" style="background-color:aqua; color:black; font-size:20px;"/>

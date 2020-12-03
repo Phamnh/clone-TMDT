@@ -7,8 +7,8 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using DoAnAsp.Areas.Admin.Data;
 using DoAnAsp.Areas.Admin.Models;
-using System.IO;
 using Microsoft.AspNetCore.Http;
+using System.IO;
 
 namespace DoAnAsp.Areas.Admin.Controllers
 {
@@ -68,7 +68,7 @@ namespace DoAnAsp.Areas.Admin.Controllers
                 var parth = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/template/admin/img",
                     sanPhamModel.IdSP + "." + ful.FileName.Split(".")
                     [ful.FileName.Split(".").Length - 1]);
-                using (var stream = new FileStream(parth,FileMode.Create))
+                using (var stream = new FileStream(parth, FileMode.Create))
                 {
                     await ful.CopyToAsync(stream);
                 }

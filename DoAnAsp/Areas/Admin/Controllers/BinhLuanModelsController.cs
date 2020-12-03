@@ -66,10 +66,10 @@ namespace DoAnAsp.Areas.Admin.Controllers
             {
                 _context.Add(binhLuanModel);
                 await _context.SaveChangesAsync();
-                var parth = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/template/admin/img", 
+                var parth = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/template/admin/img",
                     binhLuanModel.IdBL + "." + ful.FileName.Split(".")
                     [ful.FileName.Split(".").Length - 1]);
-                using (var stream = new FileStream(parth,FileMode.Create))
+                using (var stream = new FileStream(parth, FileMode.Create))
                 {
                     await ful.CopyToAsync(stream);
                 }
