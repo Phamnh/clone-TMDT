@@ -11,25 +11,27 @@ namespace DoAnAsp.Migrations
                 name: "admin",
                 columns: table => new
                 {
-                    Username = table.Column<string>(type: "nvarchar(20)", maxLength: 20, nullable: false),
-                    Password = table.Column<string>(type: "nvarchar(20)", maxLength: 20, nullable: false),
-                    Hoten = table.Column<string>(type: "nvarchar(30)", maxLength: 30, nullable: true),
-                    Sdt = table.Column<int>(type: "int", nullable: false),
-                    Email = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                    IdAdmin = table.Column<int>(nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Username = table.Column<string>(maxLength: 20, nullable: false),
+                    Password = table.Column<string>(maxLength: 20, nullable: false),
+                    Hoten = table.Column<string>(maxLength: 30, nullable: true),
+                    Sdt = table.Column<int>(nullable: false),
+                    Email = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_admin", x => x.Username);
+                    table.PrimaryKey("PK_admin", x => x.IdAdmin);
                 });
 
             migrationBuilder.CreateTable(
                 name: "loaisanpham",
                 columns: table => new
                 {
-                    IdLSP = table.Column<int>(type: "int", nullable: false)
+                    IdLSP = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    TenLSP = table.Column<string>(type: "nvarchar(70)", maxLength: 70, nullable: false),
-                    Trangthai = table.Column<bool>(type: "bit", nullable: false)
+                    TenLSP = table.Column<string>(maxLength: 70, nullable: false),
+                    Trangthai = table.Column<bool>(nullable: false)
                 },
                 constraints: table =>
                 {
@@ -40,11 +42,11 @@ namespace DoAnAsp.Migrations
                 name: "nhacungcap",
                 columns: table => new
                 {
-                    IdNCC = table.Column<int>(type: "int", nullable: false)
+                    IdNCC = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    TenNCC = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
-                    SdtNCC = table.Column<int>(type: "int", nullable: false),
-                    TrangThai = table.Column<bool>(type: "bit", nullable: false)
+                    TenNCC = table.Column<string>(maxLength: 100, nullable: false),
+                    SdtNCC = table.Column<int>(nullable: false),
+                    TrangThai = table.Column<bool>(nullable: false)
                 },
                 constraints: table =>
                 {
@@ -55,15 +57,15 @@ namespace DoAnAsp.Migrations
                 name: "user",
                 columns: table => new
                 {
-                    IdUser = table.Column<int>(type: "int", nullable: false)
+                    IdUser = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    HotenUser = table.Column<string>(type: "nvarchar(30)", maxLength: 30, nullable: true),
-                    EmailUser = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    SdtUser = table.Column<int>(type: "int", nullable: false),
-                    DiachiUser = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: true),
-                    UsernameUser = table.Column<string>(type: "nvarchar(20)", maxLength: 20, nullable: false),
-                    PasswordUser = table.Column<string>(type: "nvarchar(20)", maxLength: 20, nullable: false),
-                    TrangthaiUser = table.Column<bool>(type: "bit", nullable: false)
+                    HotenUser = table.Column<string>(maxLength: 30, nullable: true),
+                    EmailUser = table.Column<string>(nullable: true),
+                    SdtUser = table.Column<int>(nullable: false),
+                    DiachiUser = table.Column<string>(maxLength: 100, nullable: true),
+                    UsernameUser = table.Column<string>(maxLength: 20, nullable: false),
+                    PasswordUser = table.Column<string>(maxLength: 20, nullable: false),
+                    TrangthaiUser = table.Column<bool>(nullable: false)
                 },
                 constraints: table =>
                 {
@@ -74,19 +76,19 @@ namespace DoAnAsp.Migrations
                 name: "sanpham",
                 columns: table => new
                 {
-                    IdSP = table.Column<int>(type: "int", nullable: false)
+                    IdSP = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    TenSP = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
-                    Anh = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Gia = table.Column<double>(type: "float", nullable: false),
-                    Donvitinh = table.Column<string>(type: "nvarchar(20)", maxLength: 20, nullable: true),
-                    Soluongton = table.Column<int>(type: "int", nullable: false),
-                    IdNCC = table.Column<int>(type: "int", nullable: false),
-                    IdLSP = table.Column<int>(type: "int", nullable: false),
-                    Mota = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Trangthai = table.Column<bool>(type: "bit", nullable: false),
-                    loaspIdLSP = table.Column<int>(type: "int", nullable: true),
-                    nhacungcapIdNCC = table.Column<int>(type: "int", nullable: true)
+                    TenSP = table.Column<string>(maxLength: 100, nullable: false),
+                    Anh = table.Column<string>(nullable: true),
+                    Gia = table.Column<double>(nullable: false),
+                    Donvitinh = table.Column<string>(maxLength: 20, nullable: true),
+                    Soluongton = table.Column<int>(nullable: false),
+                    IdNCC = table.Column<int>(nullable: false),
+                    IdLSP = table.Column<int>(nullable: false),
+                    Mota = table.Column<string>(nullable: true),
+                    Trangthai = table.Column<bool>(nullable: false),
+                    loaspIdLSP = table.Column<int>(nullable: true),
+                    nhacungcapIdNCC = table.Column<int>(nullable: true)
                 },
                 constraints: table =>
                 {
@@ -109,15 +111,15 @@ namespace DoAnAsp.Migrations
                 name: "hoadon",
                 columns: table => new
                 {
-                    IdHD = table.Column<int>(type: "int", nullable: false)
+                    IdHD = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    NgaylapHD = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    Thanhtien = table.Column<double>(type: "float", nullable: false),
-                    IdUser = table.Column<int>(type: "int", nullable: false),
-                    Diachi = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: true),
-                    Sdt = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Trangthai = table.Column<bool>(type: "bit", nullable: false),
-                    userIdUser = table.Column<int>(type: "int", nullable: true)
+                    NgaylapHD = table.Column<DateTime>(nullable: false),
+                    Thanhtien = table.Column<double>(nullable: false),
+                    IdUser = table.Column<int>(nullable: false),
+                    Diachi = table.Column<string>(maxLength: 100, nullable: true),
+                    Sdt = table.Column<string>(nullable: true),
+                    Trangthai = table.Column<bool>(nullable: false),
+                    userIdUser = table.Column<int>(nullable: true)
                 },
                 constraints: table =>
                 {
@@ -134,13 +136,13 @@ namespace DoAnAsp.Migrations
                 name: "binhluan",
                 columns: table => new
                 {
-                    IdBL = table.Column<int>(type: "int", nullable: false)
+                    IdBL = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Anh = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Ten = table.Column<string>(type: "nvarchar(30)", maxLength: 30, nullable: false),
-                    Noidung = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Ngay = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    IdSP = table.Column<int>(type: "int", nullable: false)
+                    Anh = table.Column<string>(nullable: true),
+                    Ten = table.Column<string>(maxLength: 30, nullable: false),
+                    Noidung = table.Column<string>(nullable: false),
+                    Ngay = table.Column<DateTime>(nullable: false),
+                    IdSP = table.Column<int>(nullable: false)
                 },
                 constraints: table =>
                 {
@@ -157,14 +159,14 @@ namespace DoAnAsp.Migrations
                 name: "chitiethoadon",
                 columns: table => new
                 {
-                    IdCTHD = table.Column<int>(type: "int", nullable: false)
+                    IdCTHD = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Soluong = table.Column<int>(type: "int", nullable: false),
-                    Tongtien = table.Column<double>(type: "float", nullable: false),
-                    IdHD = table.Column<int>(type: "int", nullable: false),
-                    IdSP = table.Column<int>(type: "int", nullable: false),
-                    Trangthai = table.Column<bool>(type: "bit", nullable: false),
-                    hoadonIdHD = table.Column<int>(type: "int", nullable: true)
+                    Soluong = table.Column<int>(nullable: false),
+                    Tongtien = table.Column<double>(nullable: false),
+                    IdHD = table.Column<int>(nullable: false),
+                    IdSP = table.Column<int>(nullable: false),
+                    Trangthai = table.Column<bool>(nullable: false),
+                    hoadonIdHD = table.Column<int>(nullable: true)
                 },
                 constraints: table =>
                 {

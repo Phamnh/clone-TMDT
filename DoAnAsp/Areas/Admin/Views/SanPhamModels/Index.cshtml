@@ -11,7 +11,7 @@
                 <div class="product-status-wrap">
                     <h4>Products List</h4>
                     <div class="add-product">
-                        <a asp-action="Create">Add User</a>
+                        <a asp-action="Create" style="background-color:aqua; color:black; font-size:20px; margin-top: -10px;"><b>Add User</b></a>
                     </div>
                     <table>
                         <thead>
@@ -36,7 +36,8 @@
                                         @Html.DisplayFor(modelItem => item.TenSP)
                                     </td>
                                     <td>
-                                        @Html.DisplayFor(modelItem => item.Anh)
+                                        <img src="~/template/admin/img/@Html.DisplayFor(modelItem => item.Anh)" alt="Anh" />
+
                                     </td>
                                     <td>
                                         @Html.DisplayFor(modelItem => item.Gia)

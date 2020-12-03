@@ -15,16 +15,16 @@ namespace DoAnAsp.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .UseIdentityColumns()
+                .HasAnnotation("ProductVersion", "3.1.10")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
-                .HasAnnotation("ProductVersion", "5.0.0");
+                .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
             modelBuilder.Entity("DoAnAsp.Areas.Admin.Models.BinhLuanModel", b =>
                 {
                     b.Property<int>("IdBL")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
-                        .UseIdentityColumn();
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("Anh")
                         .HasColumnType("nvarchar(max)");
@@ -41,8 +41,8 @@ namespace DoAnAsp.Migrations
 
                     b.Property<string>("Ten")
                         .IsRequired()
-                        .HasMaxLength(30)
-                        .HasColumnType("nvarchar(30)");
+                        .HasColumnType("nvarchar(30)")
+                        .HasMaxLength(30);
 
                     b.HasKey("IdBL");
 
@@ -56,7 +56,7 @@ namespace DoAnAsp.Migrations
                     b.Property<int>("IdCTHD")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
-                        .UseIdentityColumn();
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<int>("IdHD")
                         .HasColumnType("int");
@@ -88,11 +88,11 @@ namespace DoAnAsp.Migrations
                     b.Property<int>("IdHD")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
-                        .UseIdentityColumn();
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("Diachi")
-                        .HasMaxLength(100)
-                        .HasColumnType("nvarchar(100)");
+                        .HasColumnType("nvarchar(100)")
+                        .HasMaxLength(100);
 
                     b.Property<int>("IdUser")
                         .HasColumnType("int");
@@ -124,12 +124,12 @@ namespace DoAnAsp.Migrations
                     b.Property<int>("IdLSP")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
-                        .UseIdentityColumn();
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("TenLSP")
                         .IsRequired()
-                        .HasMaxLength(70)
-                        .HasColumnType("nvarchar(70)");
+                        .HasColumnType("nvarchar(70)")
+                        .HasMaxLength(70);
 
                     b.Property<bool>("Trangthai")
                         .HasColumnType("bit");
@@ -144,15 +144,15 @@ namespace DoAnAsp.Migrations
                     b.Property<int>("IdNCC")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
-                        .UseIdentityColumn();
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<int>("SdtNCC")
                         .HasColumnType("int");
 
                     b.Property<string>("TenNCC")
                         .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("nvarchar(100)");
+                        .HasColumnType("nvarchar(100)")
+                        .HasMaxLength(100);
 
                     b.Property<bool>("TrangThai")
                         .HasColumnType("bit");
@@ -167,14 +167,14 @@ namespace DoAnAsp.Migrations
                     b.Property<int>("IdSP")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
-                        .UseIdentityColumn();
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("Anh")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Donvitinh")
-                        .HasMaxLength(20)
-                        .HasColumnType("nvarchar(20)");
+                        .HasColumnType("nvarchar(20)")
+                        .HasMaxLength(20);
 
                     b.Property<double>("Gia")
                         .HasColumnType("float");
@@ -193,8 +193,8 @@ namespace DoAnAsp.Migrations
 
                     b.Property<string>("TenSP")
                         .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("nvarchar(100)");
+                        .HasColumnType("nvarchar(100)")
+                        .HasMaxLength(100);
 
                     b.Property<bool>("Trangthai")
                         .HasColumnType("bit");
@@ -219,23 +219,23 @@ namespace DoAnAsp.Migrations
                     b.Property<int>("IdUser")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
-                        .UseIdentityColumn();
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("DiachiUser")
-                        .HasMaxLength(100)
-                        .HasColumnType("nvarchar(100)");
+                        .HasColumnType("nvarchar(100)")
+                        .HasMaxLength(100);
 
                     b.Property<string>("EmailUser")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("HotenUser")
-                        .HasMaxLength(30)
-                        .HasColumnType("nvarchar(30)");
+                        .HasColumnType("nvarchar(30)")
+                        .HasMaxLength(30);
 
                     b.Property<string>("PasswordUser")
                         .IsRequired()
-                        .HasMaxLength(20)
-                        .HasColumnType("nvarchar(20)");
+                        .HasColumnType("nvarchar(20)")
+                        .HasMaxLength(20);
 
                     b.Property<int>("SdtUser")
                         .HasColumnType("int");
@@ -245,8 +245,8 @@ namespace DoAnAsp.Migrations
 
                     b.Property<string>("UsernameUser")
                         .IsRequired()
-                        .HasMaxLength(20)
-                        .HasColumnType("nvarchar(20)");
+                        .HasColumnType("nvarchar(20)")
+                        .HasMaxLength(20);
 
                     b.HasKey("IdUser");
 
@@ -258,27 +258,27 @@ namespace DoAnAsp.Migrations
                     b.Property<int>("IdAdmin")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
-                        .UseIdentityColumn();
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("Email")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Hoten")
-                        .HasMaxLength(30)
-                        .HasColumnType("nvarchar(30)");
+                        .HasColumnType("nvarchar(30)")
+                        .HasMaxLength(30);
 
                     b.Property<string>("Password")
                         .IsRequired()
-                        .HasMaxLength(20)
-                        .HasColumnType("nvarchar(20)");
+                        .HasColumnType("nvarchar(20)")
+                        .HasMaxLength(20);
 
                     b.Property<int>("Sdt")
                         .HasColumnType("int");
 
                     b.Property<string>("Username")
                         .IsRequired()
-                        .HasMaxLength(20)
-                        .HasColumnType("nvarchar(20)");
+                        .HasColumnType("nvarchar(20)")
+                        .HasMaxLength(20);
 
                     b.HasKey("IdAdmin");
 
@@ -292,8 +292,6 @@ namespace DoAnAsp.Migrations
                         .HasForeignKey("IdSP")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-
-                    b.Navigation("sanpham");
                 });
 
             modelBuilder.Entity("DoAnAsp.Areas.Admin.Models.ChiTietHoaDonModel", b =>
@@ -301,8 +299,6 @@ namespace DoAnAsp.Migrations
                     b.HasOne("DoAnAsp.Areas.Admin.Models.HoaDonModel", "hoadon")
                         .WithMany("chitiethoadon")
                         .HasForeignKey("hoadonIdHD");
-
-                    b.Navigation("hoadon");
                 });
 
             modelBuilder.Entity("DoAnAsp.Areas.Admin.Models.HoaDonModel", b =>
@@ -310,8 +306,6 @@ namespace DoAnAsp.Migrations
                     b.HasOne("DoAnAsp.Areas.Admin.Models.UserModel", "user")
                         .WithMany("hoadon")
                         .HasForeignKey("userIdUser");
-
-                    b.Navigation("user");
                 });
 
             modelBuilder.Entity("DoAnAsp.Areas.Admin.Models.SanPhamModel", b =>
@@ -323,35 +317,6 @@ namespace DoAnAsp.Migrations
                     b.HasOne("DoAnAsp.Areas.Admin.Models.NhaCungCapModel", "nhacungcap")
                         .WithMany("sanpham")
                         .HasForeignKey("nhacungcapIdNCC");
-
-                    b.Navigation("loasp");
-
-                    b.Navigation("nhacungcap");
-                });
-
-            modelBuilder.Entity("DoAnAsp.Areas.Admin.Models.HoaDonModel", b =>
-                {
-                    b.Navigation("chitiethoadon");
-                });
-
-            modelBuilder.Entity("DoAnAsp.Areas.Admin.Models.LoaiSPModelcs", b =>
-                {
-                    b.Navigation("sanpham");
-                });
-
-            modelBuilder.Entity("DoAnAsp.Areas.Admin.Models.NhaCungCapModel", b =>
-                {
-                    b.Navigation("sanpham");
-                });
-
-            modelBuilder.Entity("DoAnAsp.Areas.Admin.Models.SanPhamModel", b =>
-                {
-                    b.Navigation("binhluan");
-                });
-
-            modelBuilder.Entity("DoAnAsp.Areas.Admin.Models.UserModel", b =>
-                {
-                    b.Navigation("hoadon");
                 });
 #pragma warning restore 612, 618
         }
