@@ -1,6 +1,10 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "PY8i26Xva54LFWZ9sm68kasfWUHBA3DP+5s9FK/Wvi3Iw/Bch0EP2wSjpHZ5LevtITVbFSHrSo+BEd57ZEc1SQ==",
+=======
+  "dgSpecHash": "pkuQBs60datQsvZpR5YAOpCQBfNw80tM/sfqWWRtaHHdg20CpDyLwqHx6FI5igiIEwzg96GtRoc40oKBzq8Hhw==",
+>>>>>>> dev1
   "success": true,
   "projectFilePath": "C:\\Users\\Admin\\Documents\\GitHub\\clone-TMDT\\DoAnAsp\\DoAnAsp.csproj",
   "expectedPackageFiles": [
