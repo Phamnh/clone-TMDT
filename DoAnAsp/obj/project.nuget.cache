@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "VQupXtfR7YncWYBKMAl3YZwVbtZVun2C79M+KsjkHKLXkHu72ybsWTW+ICoP19wVRvERwPHU/EhyGMqsjI0V0Q==",
+  "dgSpecHash": "JVtm89xAlJbpj7JIFvl+rZUsGlvTIONjvQr4owSCpighJ+mMSCiZUqcQTeUjNtEW1PsdTSxFx1hjDrjeCVXZOg==",
   "success": true,
-  "projectFilePath": "D:\\DEMO_ASP_NET_HK5\\clone-TMDT\\DoAnAsp\\DoAnAsp.csproj",
+  "projectFilePath": "C:\\Users\\Admin\\Documents\\GitHub\\clone-TMDT\\DoAnAsp\\DoAnAsp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
@@ -172,5 +172,12 @@
     "C:\\Users\\Admin\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Users\\Admin\\Documents\\GitHub\\clone-TMDT\\DoAnAsp\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
