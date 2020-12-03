@@ -1,34 +1,20 @@
 {
   "format": 1,
   "restore": {
-<<<<<<< HEAD
-    "D:\\clone-TMDT\\DoAnAsp\\DoAnAsp.csproj": {}
+    "C:\\Users\\Quoc Trung\\Documents\\GitHub\\clone-TMDT\\DoAnAsp\\DoAnAsp.csproj": {}
   },
   "projects": {
-    "D:\\clone-TMDT\\DoAnAsp\\DoAnAsp.csproj": {
+    "C:\\Users\\Quoc Trung\\Documents\\GitHub\\clone-TMDT\\DoAnAsp\\DoAnAsp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\clone-TMDT\\DoAnAsp\\DoAnAsp.csproj",
+        "projectUniqueName": "C:\\Users\\Quoc Trung\\Documents\\GitHub\\clone-TMDT\\DoAnAsp\\DoAnAsp.csproj",
         "projectName": "DoAnAsp",
-        "projectPath": "D:\\clone-TMDT\\DoAnAsp\\DoAnAsp.csproj",
+        "projectPath": "C:\\Users\\Quoc Trung\\Documents\\GitHub\\clone-TMDT\\DoAnAsp\\DoAnAsp.csproj",
         "packagesPath": "C:\\Users\\Quoc Trung\\.nuget\\packages\\",
-        "outputPath": "D:\\clone-TMDT\\DoAnAsp\\obj\\",
-=======
-    "C:\\Users\\Admin\\Documents\\GitHub\\clone-TMDT\\DoAnAsp\\DoAnAsp.csproj": {}
-  },
-  "projects": {
-    "C:\\Users\\Admin\\Documents\\GitHub\\clone-TMDT\\DoAnAsp\\DoAnAsp.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\Documents\\GitHub\\clone-TMDT\\DoAnAsp\\DoAnAsp.csproj",
-        "projectName": "DoAnAsp",
-        "projectPath": "C:\\Users\\Admin\\Documents\\GitHub\\clone-TMDT\\DoAnAsp\\DoAnAsp.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\Documents\\GitHub\\clone-TMDT\\DoAnAsp\\obj\\",
->>>>>>> origin/dev4
+        "outputPath": "C:\\Users\\Quoc Trung\\Documents\\GitHub\\clone-TMDT\\DoAnAsp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Quoc Trung\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
