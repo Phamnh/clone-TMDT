@@ -24,8 +24,8 @@
             </div>
             <div class="form-group">
                 <label asp-for="IdUser" class="control-label"></label>
-                <input asp-for="IdUser" class="form-control" style="border: solid 1px white;"/>
-                <span asp-validation-for="IdUser" class="text-danger"></span>
+                <select asp-for="IdUser" class="form-control" asp-items="@(new SelectList(ViewBag.IdUser,"IdUser","HotenUser"))"
+                        style="border: solid 1px white;"></select>
             </div>
             <div class="form-group">
                 <label asp-for="Diachi" class="control-label"></label>

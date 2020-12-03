@@ -47,6 +47,7 @@ namespace DoAnAsp.Areas.Admin.Controllers
         // GET: Admin/HoaDonModels/Create
         public IActionResult Create()
         {
+            ViewBag.IdUser = _context.user.ToList();
             return View();
         }
 

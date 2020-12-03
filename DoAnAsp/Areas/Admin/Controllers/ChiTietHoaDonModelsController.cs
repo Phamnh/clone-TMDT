@@ -47,6 +47,8 @@ namespace DoAnAsp.Areas.Admin.Controllers
         // GET: Admin/ChiTietHoaDonModels/Create
         public IActionResult Create()
         {
+            ViewBag.IdHD = _context.hoadon.ToList();
+            ViewBag.IdSP = _context.sanpham.ToList();
             return View();
         }
 
