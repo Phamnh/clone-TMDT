@@ -7,6 +7,8 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using DoAnAsp.Areas.Admin.Data;
 using DoAnAsp.Areas.Admin.Models;
+using Microsoft.AspNetCore.Http;
+using System.IO;
 
 namespace DoAnAsp.Areas.Admin.Controllers
 {
@@ -49,7 +51,7 @@ namespace DoAnAsp.Areas.Admin.Controllers
         // GET: Admin/BinhLuanModels/Create
         public IActionResult Create()
         {
-            ViewData["IdSP"] = new SelectList(_context.sanpham, "IdSP", "TenSP");
+            ViewBag.IdSP = _context.sanpham.ToList();
             return View();
         }
 
@@ -58,15 +60,26 @@ namespace DoAnAsp.Areas.Admin.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("IdBL,Anh,Ten,Noidung,Ngay,IdSP")] BinhLuanModel binhLuanModel)
+        public async Task<IActionResult> Create([Bind("IdBL,Anh,Ten,Noidung,Ngay,IdSP")] BinhLuanModel binhLuanModel, IFormFile ful)
         {
             if (ModelState.IsValid)
             {
                 _context.Add(binhLuanModel);
                 await _context.SaveChangesAsync();
+                var parth = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/template/admin/img", 
+                    binhLuanModel.IdBL + "." + ful.FileName.Split(".")
+                    [ful.FileName.Split(".").Length - 1]);
+                using (var stream = new FileStream(parth,FileMode.Create))
+                {
+                    await ful.CopyToAsync(stream);
+                }
+                binhLuanModel.Anh = binhLuanModel.IdBL + "." + ful.FileName.Split(".")
+                    [ful.FileName.Split(".").Length - 1];
+                _context.Update(binhLuanModel);
+                await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["IdSP"] = new SelectList(_context.sanpham, "IdSP", "TenSP", binhLuanModel.IdSP);
+            ViewBag.IdSP = _context.sanpham.ToList();
             return View(binhLuanModel);
         }
 
