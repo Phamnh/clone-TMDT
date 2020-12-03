@@ -8947,19 +8947,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Admin\\.nuget\\packages\\": {}
+    "C:\\Users\\Quoc Trung\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Admin\\Documents\\GitHub\\clone-TMDT\\DoAnAsp\\DoAnAsp.csproj",
+      "projectUniqueName": "D:\\clone-TMDT\\DoAnAsp\\DoAnAsp.csproj",
       "projectName": "DoAnAsp",
-      "projectPath": "C:\\Users\\Admin\\Documents\\GitHub\\clone-TMDT\\DoAnAsp\\DoAnAsp.csproj",
-      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Admin\\Documents\\GitHub\\clone-TMDT\\DoAnAsp\\obj\\",
+      "projectPath": "D:\\clone-TMDT\\DoAnAsp\\DoAnAsp.csproj",
+      "packagesPath": "C:\\Users\\Quoc Trung\\.nuget\\packages\\",
+      "outputPath": "D:\\clone-TMDT\\DoAnAsp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Quoc Trung\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -9027,13 +9027,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file C:\\Users\\Admin\\Documents\\GitHub\\clone-TMDT\\DoAnAsp\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  }
 }

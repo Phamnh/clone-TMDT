@@ -4,38 +4,38 @@
     ViewData["Title"] = "Create";
 }
 
-<h1 style="color: white; padding-left:20px;">Create</h1>
+<h1>Create</h1>
 
-<h4 style="color: white; padding-left:20px;">NhaCungCapModel</h4>
+<h4>NhaCungCapModel</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
-        <form asp-action="Create" style="color: white; padding-left:20px;">
+        <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
                 <label asp-for="TenNCC" class="control-label"></label>
-                <input asp-for="TenNCC" class="form-control" style="border: solid 1px white;"/>
+                <input asp-for="TenNCC" class="form-control" />
                 <span asp-validation-for="TenNCC" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="SdtNCC" class="control-label"></label>
-                <input asp-for="SdtNCC" class="form-control" style="border: solid 1px white;"/>
+                <input asp-for="SdtNCC" class="form-control" />
                 <span asp-validation-for="SdtNCC" class="text-danger"></span>
             </div>
             <div class="form-group form-check">
                 <label class="form-check-label">
-                    <input class="form-check-input" asp-for="TrangThai" style="border: solid 1px white;"/> @Html.DisplayNameFor(model => model.TrangThai)
+                    <input class="form-check-input" asp-for="TrangThai" /> @Html.DisplayNameFor(model => model.TrangThai)
                 </label>
             </div>
             <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" style="background-color:aqua; color:black; font-size:20px;"/>
+                <input type="submit" value="Create" class="btn btn-primary" />
             </div>
         </form>
     </div>
 </div>
 
 <div>
-    <a asp-action="Index" style="padding-left:20px;">Back to List</a>
+    <a asp-action="Index">Back to List</a>
 </div>
 
 @section Scripts {
