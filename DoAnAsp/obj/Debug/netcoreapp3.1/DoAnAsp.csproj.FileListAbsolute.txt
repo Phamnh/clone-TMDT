@@ -339,8 +339,6 @@ D:\clone-TMDT\DoAnAsp\bin\Debug\netcoreapp3.1\runtimes\win-arm\native\e_sqlite3.
 D:\clone-TMDT\DoAnAsp\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\e_sqlite3.dll
 D:\clone-TMDT\DoAnAsp\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\e_sqlite3.dll
 D:\clone-TMDT\DoAnAsp\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\e_sqlite3.dll
-D:\clone-TMDT\DoAnAsp\obj\Debug\netcoreapp3.1\DoAnAsp.csproj.CoreCompileInputs.cache
-D:\clone-TMDT\DoAnAsp\obj\Debug\netcoreapp3.1\DoAnAsp.MvcApplicationPartsAssemblyInfo.cache
 D:\clone-TMDT\DoAnAsp\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\AdminModels\Create.cshtml.g.cs
 D:\clone-TMDT\DoAnAsp\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\AdminModels\Delete.cshtml.g.cs
 D:\clone-TMDT\DoAnAsp\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\AdminModels\Details.cshtml.g.cs
@@ -389,3 +387,14 @@ D:\clone-TMDT\DoAnAsp\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\UserModels
 D:\clone-TMDT\DoAnAsp\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\UserModels\Index.cshtml.g.cs
 D:\clone-TMDT\DoAnAsp\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\_ViewImports.cshtml.g.cs
 D:\clone-TMDT\DoAnAsp\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\_ViewStart.cshtml.g.cs
+C:\Users\Quoc Trung\Documents\GitHub\clone-TMDT\DoAnAsp\obj\Debug\netcoreapp3.1\DoAnAsp.csprojAssemblyReference.cache
+C:\Users\Quoc Trung\Documents\GitHub\clone-TMDT\DoAnAsp\obj\Debug\netcoreapp3.1\DoAnAsp.AssemblyInfoInputs.cache
+C:\Users\Quoc Trung\Documents\GitHub\clone-TMDT\DoAnAsp\obj\Debug\netcoreapp3.1\DoAnAsp.AssemblyInfo.cs
+C:\Users\Quoc Trung\Documents\GitHub\clone-TMDT\DoAnAsp\obj\Debug\netcoreapp3.1\DoAnAsp.csproj.CoreCompileInputs.cache
+C:\Users\Quoc Trung\Documents\GitHub\clone-TMDT\DoAnAsp\obj\Debug\netcoreapp3.1\DoAnAsp.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Quoc Trung\Documents\GitHub\clone-TMDT\DoAnAsp\obj\Debug\netcoreapp3.1\DoAnAsp.RazorAssemblyInfo.cache
+C:\Users\Quoc Trung\Documents\GitHub\clone-TMDT\DoAnAsp\obj\Debug\netcoreapp3.1\DoAnAsp.RazorAssemblyInfo.cs
+C:\Users\Quoc Trung\Documents\GitHub\clone-TMDT\DoAnAsp\obj\Debug\netcoreapp3.1\DoAnAsp.dll
+C:\Users\Quoc Trung\Documents\GitHub\clone-TMDT\DoAnAsp\obj\Debug\netcoreapp3.1\DoAnAsp.pdb
+D:\clone-TMDT\DoAnAsp\obj\Debug\netcoreapp3.1\DoAnAsp.csproj.CoreCompileInputs.cache
+D:\clone-TMDT\DoAnAsp\obj\Debug\netcoreapp3.1\DoAnAsp.MvcApplicationPartsAssemblyInfo.cache
