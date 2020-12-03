@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "hNrprwWnswEsa9agKzM6dpLT2txDk71faMxQX8Hz+oWIP//lng/l8SW9/hJ7m8o/96VUuys+JYCkwu4yAiBLsg==",
+  "dgSpecHash": "9BvKTHrbSchjtMbMjeSYjusIM16ahzFJczzxCzBQJPHu1jd4VeUlFqJUBRMUITCq5vgtXf0loEEKK2eMKYzuUw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Quoc Trung\\Documents\\GitHub\\clone-TMDT\\DoAnAsp\\DoAnAsp.csproj",
   "expectedPackageFiles": [
@@ -174,12 +174,5 @@
     "C:\\Users\\Quoc Trung\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
     "C:\\Users\\Quoc Trung\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file C:\\Users\\Quoc Trung\\Documents\\GitHub\\clone-TMDT\\DoAnAsp\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  "logs": []
 }
