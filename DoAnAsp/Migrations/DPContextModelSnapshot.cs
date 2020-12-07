@@ -146,8 +146,8 @@ namespace DoAnAsp.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<int>("SdtNCC")
-                        .HasColumnType("int");
+                    b.Property<string>("SdtNCC")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("TenNCC")
                         .IsRequired()
@@ -237,8 +237,8 @@ namespace DoAnAsp.Migrations
                         .HasColumnType("nvarchar(20)")
                         .HasMaxLength(20);
 
-                    b.Property<int>("SdtUser")
-                        .HasColumnType("int");
+                    b.Property<string>("SdtUser")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("TrangthaiUser")
                         .HasColumnType("bit");
@@ -272,8 +272,8 @@ namespace DoAnAsp.Migrations
                         .HasColumnType("nvarchar(20)")
                         .HasMaxLength(20);
 
-                    b.Property<int>("Sdt")
-                        .HasColumnType("int");
+                    b.Property<string>("Sdt")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Username")
                         .IsRequired()

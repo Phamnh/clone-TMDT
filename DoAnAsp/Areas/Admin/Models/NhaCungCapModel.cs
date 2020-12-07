@@ -14,7 +14,7 @@ namespace DoAnAsp.Areas.Admin.Models
         [StringLength(100)]
         public string TenNCC { get; set; }
         [Phone]
-        public int SdtNCC { get; set; }
+        public string SdtNCC { get; set; }
         public bool TrangThai { get; set; }
         public ICollection<SanPhamModel> sanpham { get; set; }
     }

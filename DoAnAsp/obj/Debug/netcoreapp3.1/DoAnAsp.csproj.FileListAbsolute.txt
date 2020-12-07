@@ -170,7 +170,6 @@ D:\clone-TMDT\DoAnAsp\bin\Debug\netcoreapp3.1\DoAnAsp.dll
 D:\clone-TMDT\DoAnAsp\bin\Debug\netcoreapp3.1\DoAnAsp.pdb
 D:\clone-TMDT\DoAnAsp\bin\Debug\netcoreapp3.1\DoAnAsp.Views.dll
 D:\clone-TMDT\DoAnAsp\bin\Debug\netcoreapp3.1\DoAnAsp.Views.pdb
-D:\clone-TMDT\DoAnAsp\bin\Debug\netcoreapp3.1\Humanizer.dll
 D:\clone-TMDT\DoAnAsp\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Razor.Language.dll
 D:\clone-TMDT\DoAnAsp\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.dll
 D:\clone-TMDT\DoAnAsp\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.dll
@@ -209,7 +208,6 @@ D:\clone-TMDT\DoAnAsp\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGen
 D:\clone-TMDT\DoAnAsp\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
 D:\clone-TMDT\DoAnAsp\bin\Debug\netcoreapp3.1\NuGet.Frameworks.dll
 D:\clone-TMDT\DoAnAsp\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
-D:\clone-TMDT\DoAnAsp\bin\Debug\netcoreapp3.1\System.ComponentModel.Annotations.dll
 D:\clone-TMDT\DoAnAsp\bin\Debug\netcoreapp3.1\System.Composition.AttributedModel.dll
 D:\clone-TMDT\DoAnAsp\bin\Debug\netcoreapp3.1\System.Composition.Convention.dll
 D:\clone-TMDT\DoAnAsp\bin\Debug\netcoreapp3.1\System.Composition.Hosting.dll
@@ -272,17 +270,6 @@ D:\clone-TMDT\DoAnAsp\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.Workspac
 D:\clone-TMDT\DoAnAsp\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 D:\clone-TMDT\DoAnAsp\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 D:\clone-TMDT\DoAnAsp\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\clone-TMDT\DoAnAsp\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
-D:\clone-TMDT\DoAnAsp\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
-D:\clone-TMDT\DoAnAsp\bin\Debug\netcoreapp3.1\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
-D:\clone-TMDT\DoAnAsp\bin\Debug\netcoreapp3.1\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
-D:\clone-TMDT\DoAnAsp\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
-D:\clone-TMDT\DoAnAsp\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
-D:\clone-TMDT\DoAnAsp\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
-D:\clone-TMDT\DoAnAsp\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
-D:\clone-TMDT\DoAnAsp\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
-D:\clone-TMDT\DoAnAsp\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
-D:\clone-TMDT\DoAnAsp\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 D:\clone-TMDT\DoAnAsp\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 D:\clone-TMDT\DoAnAsp\obj\Debug\netcoreapp3.1\DoAnAsp.csprojAssemblyReference.cache
 D:\clone-TMDT\DoAnAsp\obj\Debug\netcoreapp3.1\DoAnAsp.AssemblyInfoInputs.cache
@@ -845,3 +832,14 @@ C:\Users\Quoc Trung\Documents\GitHub\clone-TMDT\DoAnAsp\obj\Debug\netcoreapp3.1\
 C:\Users\Quoc Trung\Documents\GitHub\clone-TMDT\DoAnAsp\obj\Debug\netcoreapp3.1\DoAnAsp.dll
 C:\Users\Quoc Trung\Documents\GitHub\clone-TMDT\DoAnAsp\obj\Debug\netcoreapp3.1\DoAnAsp.pdb
 C:\Users\Quoc Trung\Documents\GitHub\clone-TMDT\DoAnAsp\obj\Debug\netcoreapp3.1\DoAnAsp.genruntimeconfig.cache
+D:\clone-TMDT\DoAnAsp\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
+D:\clone-TMDT\DoAnAsp\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
+D:\clone-TMDT\DoAnAsp\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
+D:\clone-TMDT\DoAnAsp\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
+D:\clone-TMDT\DoAnAsp\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+D:\clone-TMDT\DoAnAsp\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+D:\clone-TMDT\DoAnAsp\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+D:\clone-TMDT\DoAnAsp\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+D:\clone-TMDT\DoAnAsp\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+D:\clone-TMDT\DoAnAsp\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
+D:\clone-TMDT\DoAnAsp\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll

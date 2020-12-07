@@ -15,12 +15,13 @@ namespace DoAnAsp.Areas.Admin.Models
         [EmailAddress(ErrorMessage = "Please enter a valid email")]
         public string EmailUser { get; set; }
         [Phone]
-        public int SdtUser { get; set; }
+        public string SdtUser { get; set; }
         [StringLength(100)]
         public string DiachiUser { get; set; }
         [Required(AllowEmptyStrings = false, ErrorMessage = "Please enter a valid Username")]
         [StringLength(20)]
         public string UsernameUser { get; set; }
+        [DataType(DataType.Password)]
         [Required(AllowEmptyStrings = false, ErrorMessage = "Please enter a valid password")]
         [StringLength(20)]
         public string PasswordUser { get; set; }
