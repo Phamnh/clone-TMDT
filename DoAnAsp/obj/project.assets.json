@@ -8826,11 +8826,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\clone-TMDT\\DoAnAsp\\DoAnAsp.csproj",
+      "projectUniqueName": "C:\\Users\\Quoc Trung\\Documents\\GitHub\\clone-TMDT\\DoAnAsp\\DoAnAsp.csproj",
       "projectName": "DoAnAsp",
-      "projectPath": "D:\\clone-TMDT\\DoAnAsp\\DoAnAsp.csproj",
+      "projectPath": "C:\\Users\\Quoc Trung\\Documents\\GitHub\\clone-TMDT\\DoAnAsp\\DoAnAsp.csproj",
       "packagesPath": "C:\\Users\\Quoc Trung\\.nuget\\packages\\",
-      "outputPath": "D:\\clone-TMDT\\DoAnAsp\\obj\\",
+      "outputPath": "C:\\Users\\Quoc Trung\\Documents\\GitHub\\clone-TMDT\\DoAnAsp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Quoc Trung\\AppData\\Roaming\\NuGet\\NuGet.Config",

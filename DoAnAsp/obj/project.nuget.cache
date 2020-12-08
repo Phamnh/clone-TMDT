@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "I056QYh1gmiudXDE1IKTEaPyxQVFeFbkC6DQCZ6LTgVw5AJ7YQKcx7Gj0tfWbiReLcS7n0/AOknKtFoYgEZJmQ==",
+  "dgSpecHash": "9BvKTHrbSchjtMbMjeSYjusIM16ahzFJczzxCzBQJPHu1jd4VeUlFqJUBRMUITCq5vgtXf0loEEKK2eMKYzuUw==",
   "success": true,
-  "projectFilePath": "D:\\clone-TMDT\\DoAnAsp\\DoAnAsp.csproj",
+  "projectFilePath": "C:\\Users\\Quoc Trung\\Documents\\GitHub\\clone-TMDT\\DoAnAsp\\DoAnAsp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Quoc Trung\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\Quoc Trung\\.nuget\\packages\\microsoft.aspnetcore.razor\\2.2.0\\microsoft.aspnetcore.razor.2.2.0.nupkg.sha512",
