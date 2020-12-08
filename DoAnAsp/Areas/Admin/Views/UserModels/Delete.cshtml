@@ -4,60 +4,60 @@
     ViewData["Title"] = "Delete";
 }
 
-<h1>Delete</h1>
+<h1 style="color: white; padding-left:20px;">Delete</h1>
 
-<h3>Are you sure you want to delete this?</h3>
+<h3 style="color: white; padding-left:20px;">Are you sure you want to delete this?</h3>
 <div>
-    <h4>UserModel</h4>
+    <h4 style="color: white; padding-left:20px;">UserModel</h4>
     <hr />
-    <dl class="row">
-        <dt class = "col-sm-2">
+    <dl class="row" style="color: white; padding-left:20px;">
+        <dt class = "col-sm-2" style="border: solid 1px white;">
             @Html.DisplayNameFor(model => model.HotenUser)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class = "col-sm-10" style="border: solid 1px white;">
             @Html.DisplayFor(model => model.HotenUser)
         </dd>
-        <dt class = "col-sm-2">
+        <dt class = "col-sm-2" style="border: solid 1px white;">
             @Html.DisplayNameFor(model => model.EmailUser)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class = "col-sm-10" style="border: solid 1px white;">
             @Html.DisplayFor(model => model.EmailUser)
         </dd>
-        <dt class = "col-sm-2">
+        <dt class = "col-sm-2" style="border: solid 1px white;">
             @Html.DisplayNameFor(model => model.SdtUser)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class = "col-sm-10" style="border: solid 1px white;">
             @Html.DisplayFor(model => model.SdtUser)
         </dd>
-        <dt class = "col-sm-2">
+        <dt class = "col-sm-2" style="border: solid 1px white;">
             @Html.DisplayNameFor(model => model.DiachiUser)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class = "col-sm-10" style="border: solid 1px white;">
             @Html.DisplayFor(model => model.DiachiUser)
         </dd>
-        <dt class = "col-sm-2">
+        <dt class = "col-sm-2" style="border: solid 1px white;">
             @Html.DisplayNameFor(model => model.UsernameUser)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class = "col-sm-10" style="border: solid 1px white;">
             @Html.DisplayFor(model => model.UsernameUser)
         </dd>
-        <dt class = "col-sm-2">
+        <dt class = "col-sm-2" style="border: solid 1px white;">
             @Html.DisplayNameFor(model => model.PasswordUser)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class = "col-sm-10" style="border: solid 1px white;">
             @Html.DisplayFor(model => model.PasswordUser)
         </dd>
-        <dt class = "col-sm-2">
+        <dt class = "col-sm-2" style="border: solid 1px white;">
             @Html.DisplayNameFor(model => model.TrangthaiUser)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class = "col-sm-10" style="border: solid 1px white;">
             @Html.DisplayFor(model => model.TrangthaiUser)
         </dd>
     </dl>
     
-    <form asp-action="Delete">
-        <input type="hidden" asp-for="IdUser" />
-        <input type="submit" value="Delete" class="btn btn-danger" /> |
-        <a asp-action="Index">Back to List</a>
+    <form asp-action="Delete" style="color: white; padding-left:20px;">
+        <input type="hidden" asp-for="IdUser" style="border: solid 1px white;"/>
+        <input type="submit" value="Delete" class="btn btn-danger" style="border: solid 1px white;"/> 
+        <a asp-action="Index" style="padding-left:20px;">Back to List</a>
     </form>
 </div>

@@ -8821,19 +8821,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Quoc Trung\\.nuget\\packages\\": {}
+    "C:\\Users\\Admin\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\clone-TMDT\\DoAnAsp\\DoAnAsp.csproj",
+      "projectUniqueName": "D:\\DEMO_ASP_NET_HK5\\ASP\\clone-TMDT\\DoAnAsp\\DoAnAsp.csproj",
       "projectName": "DoAnAsp",
-      "projectPath": "D:\\clone-TMDT\\DoAnAsp\\DoAnAsp.csproj",
-      "packagesPath": "C:\\Users\\Quoc Trung\\.nuget\\packages\\",
-      "outputPath": "D:\\clone-TMDT\\DoAnAsp\\obj\\",
+      "projectPath": "D:\\DEMO_ASP_NET_HK5\\ASP\\clone-TMDT\\DoAnAsp\\DoAnAsp.csproj",
+      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+      "outputPath": "D:\\DEMO_ASP_NET_HK5\\ASP\\clone-TMDT\\DoAnAsp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Quoc Trung\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
