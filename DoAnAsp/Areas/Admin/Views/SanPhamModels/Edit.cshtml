@@ -10,7 +10,7 @@
 <hr />
 <div class="row">
     <div class="col-md-4">
-        <form asp-action="Edit" style="color: white; padding-left:20px;">
+        <form asp-action="Edit" style="color: white; padding-left:20px;" enctype="multipart/form-data">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="IdSP" style="border: solid 1px white;"/>
             <div class="form-group">
@@ -18,10 +18,9 @@
                 <input asp-for="TenSP" class="form-control" style="border: solid 1px white;"/>
                 <span asp-validation-for="TenSP" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="Anh" class="control-label"></label>
-                <input asp-for="Anh" class="form-control" style="border: solid 1px white;"/>
-                <span asp-validation-for="Anh" class="text-danger"></span>
+            <div class="custom-file">
+                <label asp-for="Anh" for="ful" class="custom-file-label">Choose Image</label>
+                <input type="file" name="ful" id="ful" class="custom-file-input" style="border: solid 1px white;" />
             </div>
             <div class="form-group">
                 <label asp-for="Gia" class="control-label"></label>
@@ -40,13 +39,11 @@
             </div>
             <div class="form-group">
                 <label asp-for="IdNCC" class="control-label"></label>
-                <input asp-for="IdNCC" class="form-control" style="border: solid 1px white;"/>
-                <span asp-validation-for="IdNCC" class="text-danger"></span>
+                <select asp-for="IdNCC" class="form-control" asp-items="@(new SelectList(ViewBag.IdNCC,"IdNCC","TenNCC"))" style="border: solid 1px white;"></select>
             </div>
             <div class="form-group">
                 <label asp-for="IdLSP" class="control-label"></label>
-                <input asp-for="IdLSP" class="form-control" style="border: solid 1px white;"/>
-                <span asp-validation-for="IdLSP" class="text-danger"></span>
+                <select asp-for="IdLSP" class="form-control" asp-items="@(new SelectList(ViewBag.IdLSP,"IdLSP","TenLSP"))" style="border: solid 1px white;"></select>
             </div>
             <div class="form-group">
                 <label asp-for="Mota" class="control-label"></label>

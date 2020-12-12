@@ -66,7 +66,7 @@ namespace DoAnAsp.Areas.Admin.Controllers
             {
                 _context.Add(binhLuanModel);
                 await _context.SaveChangesAsync();
-                var parth = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/template/admin/img",
+                var parth = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/template/admin/img/comment",
                     binhLuanModel.IdBL + "." + ful.FileName.Split(".")
                     [ful.FileName.Split(".").Length - 1]);
                 using (var stream = new FileStream(parth, FileMode.Create))
@@ -96,7 +96,7 @@ namespace DoAnAsp.Areas.Admin.Controllers
             {
                 return NotFound();
             }
-            ViewData["IdSP"] = new SelectList(_context.sanpham, "IdSP", "TenSP", binhLuanModel.IdSP);
+            ViewBag.IdSP = _context.sanpham.ToList();
             return View(binhLuanModel);
         }
 
@@ -105,7 +105,7 @@ namespace DoAnAsp.Areas.Admin.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("IdBL,Anh,Ten,Noidung,Ngay,IdSP")] BinhLuanModel binhLuanModel)
+        public async Task<IActionResult> Edit(int id, [Bind("IdBL,Anh,Ten,Noidung,Ngay,IdSP")] BinhLuanModel binhLuanModel, IFormFile ful)
         {
             if (id != binhLuanModel.IdBL)
             {
@@ -116,6 +116,19 @@ namespace DoAnAsp.Areas.Admin.Controllers
             {
                 try
                 {
+                    _context.Update(binhLuanModel);
+                    await _context.SaveChangesAsync();
+                    var parth = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/template/admin/img/comment",
+                        binhLuanModel.Anh);
+                    System.IO.File.Delete(parth);
+                    parth = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/template/admin/img/comment", binhLuanModel.IdBL+"."+ful.FileName.Split(".")
+                        [ful.FileName.Split(".").Length - 1]);
+                    using(var stream = new FileStream(parth, FileMode.Create))
+                    {
+                        await ful.CopyToAsync(stream);
+                    }
+                    binhLuanModel.Anh = binhLuanModel.IdBL + "." + ful.FileName.Split(".")
+                         [ful.FileName.Split(".").Length - 1];
                     _context.Update(binhLuanModel);
                     await _context.SaveChangesAsync();
                 }
@@ -132,7 +145,6 @@ namespace DoAnAsp.Areas.Admin.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["IdSP"] = new SelectList(_context.sanpham, "IdSP", "TenSP", binhLuanModel.IdSP);
             return View(binhLuanModel);
         }
 

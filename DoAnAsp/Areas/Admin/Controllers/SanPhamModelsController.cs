@@ -96,6 +96,8 @@ namespace DoAnAsp.Areas.Admin.Controllers
             {
                 return NotFound();
             }
+            ViewBag.IdNCC = _context.nhacungcap.ToList();
+            ViewBag.IdLSP = _context.loaisanpham.ToList();
             return View(sanPhamModel);
         }
 
@@ -104,7 +106,7 @@ namespace DoAnAsp.Areas.Admin.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("IdSP,TenSP,Anh,Gia,Donvitinh,Soluongton,IdNCC,IdLSP,Mota,Trangthai")] SanPhamModel sanPhamModel)
+        public async Task<IActionResult> Edit(int id, [Bind("IdSP,TenSP,Anh,Gia,Donvitinh,Soluongton,IdNCC,IdLSP,Mota,Trangthai")] SanPhamModel sanPhamModel, IFormFile ful)
         {
             if (id != sanPhamModel.IdSP)
             {
@@ -115,6 +117,18 @@ namespace DoAnAsp.Areas.Admin.Controllers
             {
                 try
                 {
+                    _context.Update(sanPhamModel);
+                    await _context.SaveChangesAsync();
+                    var parth = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/template/admin/img", sanPhamModel.Anh);
+                    System.IO.File.Delete(parth);
+                    parth = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/template/admin/img", sanPhamModel.IdSP + "." + ful.FileName.Split(".")
+                        [ful.FileName.Split(".").Length - 1]);
+                    using(var stream = new FileStream(parth,FileMode.Create))
+                    {
+                        await ful.CopyToAsync(stream);
+                    }
+                    sanPhamModel.Anh = sanPhamModel.IdSP + "." + ful.FileName.Split(".")
+                        [ful.FileName.Split(".").Length - 1];
                     _context.Update(sanPhamModel);
                     await _context.SaveChangesAsync();
                 }
@@ -131,6 +145,7 @@ namespace DoAnAsp.Areas.Admin.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
+            
             return View(sanPhamModel);
         }
 
