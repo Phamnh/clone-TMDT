@@ -106,7 +106,7 @@ namespace DoAnAsp.Areas.Admin.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("IdSP,TenSP,Anh,Gia,Donvitinh,Soluongton,IdNCC,IdLSP,Mota,Trangthai")] SanPhamModel sanPhamModel, IFormFile ful)
+        public async Task<IActionResult> Edit(int id, [Bind("IdSP,TenSP,Anh,Gia,Donvitinh,Soluongton,IdNCC,IdLSP,Mota,Trangthai")] SanPhamModel sanPhamModel, IFormFile ful, string HinhAnh)
         {
             if (id != sanPhamModel.IdSP)
             {
@@ -117,9 +117,8 @@ namespace DoAnAsp.Areas.Admin.Controllers
             {
                 try
                 {
-                    _context.Update(sanPhamModel);
-                    await _context.SaveChangesAsync();
-                    var parth = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/template/admin/img", sanPhamModel.Anh);
+                   
+                    var parth = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/template/admin/img", HinhAnh);
                     System.IO.File.Delete(parth);
                     parth = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/template/admin/img", sanPhamModel.IdSP + "." + ful.FileName.Split(".")
                         [ful.FileName.Split(".").Length - 1]);
