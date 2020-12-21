@@ -326,8 +326,6 @@ D:\clone-TMDT\DoAnAsp\bin\Debug\netcoreapp3.1\runtimes\win-arm\native\e_sqlite3.
 D:\clone-TMDT\DoAnAsp\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\e_sqlite3.dll
 D:\clone-TMDT\DoAnAsp\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\e_sqlite3.dll
 D:\clone-TMDT\DoAnAsp\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\e_sqlite3.dll
-D:\clone-TMDT\DoAnAsp\obj\Debug\netcoreapp3.1\DoAnAsp.csproj.CoreCompileInputs.cache
-D:\clone-TMDT\DoAnAsp\obj\Debug\netcoreapp3.1\DoAnAsp.MvcApplicationPartsAssemblyInfo.cache
 D:\clone-TMDT\DoAnAsp\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\AdminModels\Create.cshtml.g.cs
 D:\clone-TMDT\DoAnAsp\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\AdminModels\Delete.cshtml.g.cs
 D:\clone-TMDT\DoAnAsp\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\AdminModels\Details.cshtml.g.cs
@@ -1071,3 +1069,5 @@ D:\DEMO_ASP_NET_HK5\ASP\clone-TMDT\DoAnAsp\obj\Debug\netcoreapp3.1\DoAnAsp.cspro
 D:\DEMO_ASP_NET_HK5\ASP\clone-TMDT\DoAnAsp\obj\Debug\netcoreapp3.1\staticwebassets\DoAnAsp.StaticWebAssets.Manifest.cache
 D:\DEMO_ASP_NET_HK5\ASP\clone-TMDT\DoAnAsp\obj\Debug\netcoreapp3.1\staticwebassets\DoAnAsp.StaticWebAssets.xml
 D:\DEMO_ASP_NET_HK5\ASP\clone-TMDT\DoAnAsp\obj\Debug\netcoreapp3.1\DoAnAsp.genruntimeconfig.cache
+D:\clone-TMDT\DoAnAsp\obj\Debug\netcoreapp3.1\DoAnAsp.csproj.CoreCompileInputs.cache
+D:\clone-TMDT\DoAnAsp\obj\Debug\netcoreapp3.1\DoAnAsp.MvcApplicationPartsAssemblyInfo.cache

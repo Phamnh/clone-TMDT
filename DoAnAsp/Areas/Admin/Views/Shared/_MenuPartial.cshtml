@@ -1,7 +1,7 @@
 ﻿<div class="left-sidebar-pro">
     <nav id="sidebar" class="">
         <div class="sidebar-header">
-            
+
             <strong><img src="~/template/admin/img/logo/logosn.png" alt="" /></strong>
         </div>
         <div class="nalika-profile">
@@ -21,14 +21,30 @@
             <nav class="sidebar-nav left-sidebar-menu-pro">
                 <ul class="metismenu" id="menu1">
                     <li class="active">
-                        <a class="has-arrow" href="index.html">
-                            <i class="icon nalika-home icon-wrap"></i>
-                            <span class="mini-click-non">Ecommerce</span>
+                        <a asp-action="Index" asp-controller="AdminModels">
+                            <span>Tài khoản Admin</span>
                         </a>
-                        <ul class="submenu-angle" aria-expanded="true">
-                            
-                            <li><a title="Product List" href="product-list.html"><span class="mini-sub-pro">Product List</span></a></li>
-                        </ul>
+                        <a asp-action="Index" asp-controller="BinhLuanModels">
+                            <span>Bình luận</span>
+                        </a>
+                        <a asp-action="Index" asp-controller="ChiTietHoaDonModels">
+                            <span>Chi tiết hóa đơn</span>
+                        </a>
+                        <a asp-action="Index" asp-controller="HoaDonModels">
+                            <span>Hóa đơn</span>
+                        </a>
+                        <a asp-action="Index" asp-controller="LoaiSPModelcs">
+                            <span>Loại sản phẩm</span>
+                        </a>
+                        <a asp-action="Index" asp-controller="NhaCungCapModels">
+                            <span>Nhà cung cấp</span>
+                        </a>
+                        <a asp-action="Index" asp-controller="SanPhamModels">
+                            <span>Sản phẩm</span>
+                        </a>
+                        <a asp-action="Index" asp-controller="UserModels">
+                            <span>Tài khoản khách hàng</span>
+                        </a>
                     </li>
                     <li id="removable">
                         <a class="has-arrow" href="#" aria-expanded="false"><i class="icon nalika-new-file icon-wrap"></i> <span class="mini-click-non">Pages</span></a>

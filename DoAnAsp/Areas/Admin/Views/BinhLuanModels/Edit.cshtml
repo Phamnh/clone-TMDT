@@ -16,6 +16,7 @@
             <div class="form-group">
                 <label asp-for="Anh" for="ful" class="custom-file-label">Choose Image</label>
                 <input type="file" name="ful" id="ful" class="custom-file-input" style="border: solid 1px white;" />
+                <input type="hidden" name="HinhAnh" value="@Model.Anh" />
             </div>
             <div class="form-group">
                 <label asp-for="Ten" class="control-label"></label>

@@ -10,6 +10,16 @@
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div class="product-status-wrap">
                     <h4>Products List</h4>
+                    <div class="col-lg-6 col-md-7 col-sm-6 col-xs-12">
+                        <div class="header-top-menu tabl-d-n hd-search-rp">
+                            <div class="breadcome-heading">
+                                <form role="search" class="">
+                                    <input type="text" placeholder="Search..." class="form-control">
+                                    <a href=""><i class="fa fa-search"></i></a>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
                     <div class="add-product">
                         <a asp-action="Create" style="background-color:aqua; color:black; font-size:20px; margin-top: -10px;"><b>Add hóa đơn</b></a>
                     </div>
@@ -28,30 +38,59 @@
                         <tbody>
                             @foreach (var item in Model)
                             {
-                            <tr>
-                                <td>
-                                    @Html.DisplayFor(modelItem => item.NgaylapHD)
-                                </td>
-                                <td>
-                                    @Html.DisplayFor(modelItem => item.Thanhtien)
-                                </td>
-                                <td>
-                                    @Html.DisplayFor(modelItem => item.IdUser)
-                                </td>
-                                <td>
-                                    @Html.DisplayFor(modelItem => item.Diachi)
-                                </td>
-                                <td>
-                                    @Html.DisplayFor(modelItem => item.Sdt)
-                                </td>
-                                <td>
-                                    @Html.DisplayFor(modelItem => item.Trangthai)
-                                </td>
-                                <td>
-                                    <a asp-action="Edit" asp-route-id="@item.IdHD" data-toggle="tooltip" title="Edit" class="pd-setting-ed"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
-                                    <a asp-action="Delete" asp-route-id="@item.IdHD" data-toggle="tooltip" title="Trash" class="pd-setting-ed"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
-                                </td>
-                            </tr>
+                                <tr>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.NgaylapHD)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Thanhtien)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.IdUser)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Diachi)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Sdt)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Trangthai)
+                                    </td>
+                                    <td>
+                                        <a asp-action="Edit" asp-route-id="@item.IdHD" data-toggle="tooltip" title="Edit" class="pd-setting-ed"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                                        <a asp-action="Delete" asp-route-id="@item.IdHD" data-toggle="tooltip" title="Trash" class="pd-setting-ed"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
+                                    </td>
+                                </tr>
                             }
                         </tbody>
                     </table>
+                    <!-- Modal -->
+                    <div class="modal fade" id="myModal" role="dialog">
+                        <div class="modal-dialog">
+
+                            <!-- Modal content-->
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <div style="display:flex;justify-content:space-between">
+                                        <h4 class="modal-title" style="color:black">Thông báo</h4>
+                                        <button type="button" class="close" data-dismiss="modal" style="background-color:#00ffff;width:50px;border-radius:6px">&times;</button>
+                                    </div>
+                                </div>
+                                <div class="modal-body">
+                                    <p style="color:#ef592d">Chào mừng bạn đến trang quản lý hóa đơn</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal" style="background-color:#4caf50">Đóng</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    @section Scripts{
+                        <script>
+                            $(document).ready(function () {
+                                $('#myModal').modal('show');
+                            })
+                        </script>
+                    }

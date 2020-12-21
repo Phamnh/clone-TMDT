@@ -105,7 +105,7 @@ namespace DoAnAsp.Areas.Admin.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("IdBL,Anh,Ten,Noidung,Ngay,IdSP")] BinhLuanModel binhLuanModel, IFormFile ful)
+        public async Task<IActionResult> Edit(int id, [Bind("IdBL,Anh,Ten,Noidung,Ngay,IdSP")] BinhLuanModel binhLuanModel, IFormFile ful, string HinhAnh)
         {
             if (id != binhLuanModel.IdBL)
             {
@@ -116,10 +116,9 @@ namespace DoAnAsp.Areas.Admin.Controllers
             {
                 try
                 {
-                    _context.Update(binhLuanModel);
-                    await _context.SaveChangesAsync();
+                    
                     var parth = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/template/admin/img/comment",
-                        binhLuanModel.Anh);
+                        HinhAnh);
                     System.IO.File.Delete(parth);
                     parth = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/template/admin/img/comment", binhLuanModel.IdBL+"."+ful.FileName.Split(".")
                         [ful.FileName.Split(".").Length - 1]);
