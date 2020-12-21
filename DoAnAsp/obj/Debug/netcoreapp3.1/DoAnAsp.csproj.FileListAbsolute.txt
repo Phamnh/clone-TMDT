@@ -1304,3 +1304,8 @@ D:\DEMO_ASP_NET_HK5\demoall\clone-TMDT\DoAnAsp\obj\Debug\netcoreapp3.1\Razor\Are
 D:\DEMO_ASP_NET_HK5\demoall\clone-TMDT\DoAnAsp\obj\Debug\netcoreapp3.1\Razor\Areas\API\Views\LoaiSPModelcs\Details.cshtml.g.cs
 D:\DEMO_ASP_NET_HK5\demoall\clone-TMDT\DoAnAsp\obj\Debug\netcoreapp3.1\Razor\Areas\API\Views\LoaiSPModelcs\Edit.cshtml.g.cs
 D:\DEMO_ASP_NET_HK5\demoall\clone-TMDT\DoAnAsp\obj\Debug\netcoreapp3.1\Razor\Areas\API\Views\LoaiSPModelcs\Index.cshtml.g.cs
+C:\Users\Quoc Trung\Documents\GitHub\clone-TMDT\DoAnAsp\obj\Debug\netcoreapp3.1\Razor\Areas\API\Views\LoaiSPModelcs\Create.cshtml.g.cs
+C:\Users\Quoc Trung\Documents\GitHub\clone-TMDT\DoAnAsp\obj\Debug\netcoreapp3.1\Razor\Areas\API\Views\LoaiSPModelcs\Delete.cshtml.g.cs
+C:\Users\Quoc Trung\Documents\GitHub\clone-TMDT\DoAnAsp\obj\Debug\netcoreapp3.1\Razor\Areas\API\Views\LoaiSPModelcs\Details.cshtml.g.cs
+C:\Users\Quoc Trung\Documents\GitHub\clone-TMDT\DoAnAsp\obj\Debug\netcoreapp3.1\Razor\Areas\API\Views\LoaiSPModelcs\Edit.cshtml.g.cs
+C:\Users\Quoc Trung\Documents\GitHub\clone-TMDT\DoAnAsp\obj\Debug\netcoreapp3.1\Razor\Areas\API\Views\LoaiSPModelcs\Index.cshtml.g.cs
