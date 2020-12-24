@@ -8,7 +8,52 @@
     @await Html.PartialAsync("_MenuPartial.cshtml")
     @await Html.PartialAsync("_HeaderPartial.cshtml")
     @RenderBody()
+    <!-- Modal -->
+    <div class="modal fade" id="form-modal" role="dialog" >
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content" style="background-color:#1b2a47">
+                <div class="modal-header">
+                    <div style="display:flex;justify-content:space-between">
+                        <h4 class="modal-title" style="color:black">Thông báo</h4>
+                        <button type="button" class="close" data-dismiss="modal" style="background-color:#00ffff;width:50px;border-radius:6px">&times;</button>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <p style="color:#ef592d">Chào mừng bạn đến trang quản lý Bình Luận</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal" style="background-color:#4caf50">Đóng</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    @section Scripts{
+        <script>
+            $(document).ready(function () {
+                $('#myModal').modal('show');
+            })
+        </script>
+    }
     @await Html.PartialAsync("_FooterPartial.cshtml")
+    <script>
+        showModal = (url, title) => {
+            $.ajax({
+                type: "GET",
+                url: url,
+                success: function (res) {
+                    // Hiễn thị form create edit
+                    $('#form-modal .modal-body').html(res);
+                    //hiện tiêu đề
+                    $('#form-modal .modal-title').html(title);
+                    //hiện modal
+                    $('#form-modal').modal('show');
+                }
+            })
+        }
+    </script>
     @RenderSection("Scripts", required: false)
 </body>
 </html>

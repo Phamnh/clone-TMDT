@@ -2,9 +2,9 @@
 
 @{
     ViewData["Title"] = "Delete";
+    Layout = null;
 }
 
-<h1 style="color: white; padding-left:20px;">Delete</h1>
 
 <h3 style="color: white; padding-left:20px;">Are you sure you want to delete this?</h3>
 <div>
@@ -70,6 +70,6 @@
     <form asp-action="Delete" style="color: white; padding-left:20px;">
         <input type="hidden" asp-for="IdSP" style="border: solid 1px white;"/>
         <input type="submit" value="Delete" class="btn btn-danger" style="border: solid 1px white;"/> 
-        <a asp-action="Index" style="padding-left:20px;">Back to List</a>
+        
     </form>
 </div>

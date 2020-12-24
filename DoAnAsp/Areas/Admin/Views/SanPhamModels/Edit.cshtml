@@ -1,13 +1,11 @@
-﻿@model DoAnAsp.Areas.Admin.Models.SanPhamModel
+﻿
+@model DoAnAsp.Areas.Admin.Models.SanPhamModel
 
 @{
     ViewData["Title"] = "Edit";
+    Layout = null;
 }
 
-<h1 style="color: white; padding-left:20px;">Edit</h1>
-
-<h4 style="color: white; padding-left:20px;">SanPhamModel</h4>
-<hr />
 <div class="row">
     <div class="col-md-4">
         <form asp-action="Edit" style="color: white; padding-left:20px;" enctype="multipart/form-data" method="post"v>
@@ -22,6 +20,7 @@
                 <label asp-for="Anh" for="ful" class="custom-file-label">Choose Image</label>
                 <input type="file" name="ful" id="ful" class="custom-file-input" style="border: solid 1px white;" />
                 <input type="hidden" name="HinhAnh" value="@Model.Anh" />
+                <span asp-validation-for="Anh" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="Gia" class="control-label"></label>
@@ -63,9 +62,7 @@
     </div>
 </div>
 
-<div>
-    <a asp-action="Index" style="padding-left:20px;">Back to List</a>
-</div>
+
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}

@@ -120,14 +120,22 @@ namespace DoAnAsp.Areas.Admin.Controllers
                    
                     var parth = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/template/admin/img", HinhAnh);
                     System.IO.File.Delete(parth);
-                    parth = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/template/admin/img", sanPhamModel.IdSP + "." + ful.FileName.Split(".")
-                        [ful.FileName.Split(".").Length - 1]);
-                    using(var stream = new FileStream(parth,FileMode.Create))
+                    if(ful == null)
                     {
-                        await ful.CopyToAsync(stream);
+                        sanPhamModel.Anh = HinhAnh;
                     }
-                    sanPhamModel.Anh = sanPhamModel.IdSP + "." + ful.FileName.Split(".")
-                        [ful.FileName.Split(".").Length - 1];
+                    else
+                    {
+                        parth = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/template/admin/img", sanPhamModel.IdSP + "." + ful.FileName.Split(".")
+                        [ful.FileName.Split(".").Length - 1]);
+                        using (var stream = new FileStream(parth, FileMode.Create))
+                        {
+                            await ful.CopyToAsync(stream);
+                        }
+                        sanPhamModel.Anh = sanPhamModel.IdSP + "." + ful.FileName.Split(".")
+                            [ful.FileName.Split(".").Length - 1];
+                    }
+                    
                     _context.Update(sanPhamModel);
                     await _context.SaveChangesAsync();
                 }

@@ -1309,3 +1309,8 @@ C:\Users\Quoc Trung\Documents\GitHub\clone-TMDT\DoAnAsp\obj\Debug\netcoreapp3.1\
 C:\Users\Quoc Trung\Documents\GitHub\clone-TMDT\DoAnAsp\obj\Debug\netcoreapp3.1\Razor\Areas\API\Views\LoaiSPModelcs\Details.cshtml.g.cs
 C:\Users\Quoc Trung\Documents\GitHub\clone-TMDT\DoAnAsp\obj\Debug\netcoreapp3.1\Razor\Areas\API\Views\LoaiSPModelcs\Edit.cshtml.g.cs
 C:\Users\Quoc Trung\Documents\GitHub\clone-TMDT\DoAnAsp\obj\Debug\netcoreapp3.1\Razor\Areas\API\Views\LoaiSPModelcs\Index.cshtml.g.cs
+D:\clone-TMDT\DoAnAsp\obj\Debug\netcoreapp3.1\Razor\Areas\API\Views\LoaiSPModelcs\Create.cshtml.g.cs
+D:\clone-TMDT\DoAnAsp\obj\Debug\netcoreapp3.1\Razor\Areas\API\Views\LoaiSPModelcs\Delete.cshtml.g.cs
+D:\clone-TMDT\DoAnAsp\obj\Debug\netcoreapp3.1\Razor\Areas\API\Views\LoaiSPModelcs\Details.cshtml.g.cs
+D:\clone-TMDT\DoAnAsp\obj\Debug\netcoreapp3.1\Razor\Areas\API\Views\LoaiSPModelcs\Edit.cshtml.g.cs
+D:\clone-TMDT\DoAnAsp\obj\Debug\netcoreapp3.1\Razor\Areas\API\Views\LoaiSPModelcs\Index.cshtml.g.cs
