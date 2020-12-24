@@ -19,7 +19,7 @@
                         </div>
                     </div>
                     <div class="add-product">
-                        <a asp-action="Create" style="background-color:aqua; color:black; font-size:20px; margin-top: -10px;"><b>Add loại sản phẩm</b></a>
+                        <a onclick="showModal('@Url.Action("Create","LoaiSPModels",null,Context.Request.Scheme)','Thêm Loại Sản Phẩm')" style="background-color:aqua; color:black; font-size:20px; margin-top: -10px;"><b>Add Loại Sản Phẩm</b></a>
                     </div>
                     <table>
                         <thead>
@@ -40,8 +40,10 @@
                                         @Html.DisplayFor(modelItem => item.Trangthai)
                                     </td>
                                     <td>
-                                        <a asp-action="Edit" asp-route-id="@item.IdLSP" data-toggle="tooltip" title="Edit" class="pd-setting-ed"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
-                                        <a asp-action="Delete" asp-route-id="@item.IdLSP" data-toggle="tooltip" title="Trash" class="pd-setting-ed"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
+                                        <a onclick="showModal('@Url.Action("Edit","LoaiSPModelcs",new {id=$"{item.IdLSP}"},Context.Request.Scheme)','Cập nhật loại sản phẩm')" data-toggle="tooltip" title="Edit" class="pd-setting-ed"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                                        <a onclick="showModal('@Url.Action("Delete","LoaiSPModelcs",new {id=$"{item.IdLSP}"},Context.Request.Scheme)','Xóa loại sản phẩm')" data-toggle="tooltip" title="Trash" class="pd-setting-ed"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
+
+                          
                                     </td>
                                 </tr>
                             }

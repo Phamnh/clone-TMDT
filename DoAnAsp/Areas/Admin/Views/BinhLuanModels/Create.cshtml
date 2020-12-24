@@ -2,7 +2,10 @@
 
 @{
     ViewData["Title"] = "Create";
+    Layout = null;
 }
+
+@using (Html.BeginForm("Create", "BinhLuanModels", FormMethod.Post, new { enctype = "multipart/form-data" })) ;
 
 <h1 style="color: white; padding-left: 20px;">Create</h1>
 
@@ -14,21 +17,21 @@
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
                 <label asp-for="Anh" for="ful" class="custom-file-label">Choose Image</label>
-                <input type="file" name="ful" id="ful" class="custom-file-input" style="border: solid 1px white;"/>
+                <input type="file" name="ful" id="ful" class="custom-file-input" style="border: solid 1px white;" />
             </div>
             <div class="form-group">
                 <label asp-for="Ten" class="control-label"></label>
-                <input asp-for="Ten" class="form-control" style="border: solid 1px white;"/>
+                <input asp-for="Ten" class="form-control" style="border: solid 1px white;" />
                 <span asp-validation-for="Ten" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="Noidung" class="control-label"></label>
-                <input asp-for="Noidung" class="form-control" style="border: solid 1px white;"/>
+                <input asp-for="Noidung" class="form-control" style="border: solid 1px white;" />
                 <span asp-validation-for="Noidung" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="Ngay" class="control-label"></label>
-                <input asp-for="Ngay" class="form-control" style="border: solid 1px white;"/>
+                <input asp-for="Ngay" class="form-control" style="border: solid 1px white;" />
                 <span asp-validation-for="Ngay" class="text-danger"></span>
             </div>
             <div class="form-group">
@@ -37,7 +40,7 @@
                         style="border: solid 1px white;"></select>
             </div>
             <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" style="background-color:aqua; color:black; font-size:20px;"/>
+                <input type="submit" value="Create" class="btn btn-primary" style="background-color:aqua; color:black; font-size:20px;" />
             </div>
         </form>
     </div>
