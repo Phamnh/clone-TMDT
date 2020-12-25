@@ -2,53 +2,51 @@
 
 @{
     ViewData["Title"] = "Create";
+    Layout = null;
 }
+@using (Html.BeginForm("Create", "UserModels", FormMethod.Post, new { enctype = "multipart/form-data" })) ;
 
-<h1 style="color: white; padding-left:20px;">Create</h1>
-
-<h4 style="color: white; padding-left:20px;">UserModel</h4>
-<hr />
 <div class="row">
     <div class="col-md-4">
         <form asp-action="Create" style="color: white; padding-left:20px;">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
                 <label asp-for="HotenUser" class="control-label"></label>
-                <input asp-for="HotenUser" class="form-control" style="border: solid 1px white;"/>
+                <input asp-for="HotenUser" class="form-control" style="border: solid 1px white;" />
                 <span asp-validation-for="HotenUser" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="EmailUser" class="control-label"></label>
-                <input asp-for="EmailUser" class="form-control" style="border: solid 1px white;"/>
+                <input asp-for="EmailUser" class="form-control" style="border: solid 1px white;" />
                 <span asp-validation-for="EmailUser" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="SdtUser" class="control-label"></label>
-                <input asp-for="SdtUser" class="form-control" style="border: solid 1px white;"/>
+                <input asp-for="SdtUser" class="form-control" style="border: solid 1px white;" />
                 <span asp-validation-for="SdtUser" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="DiachiUser" class="control-label"></label>
-                <input asp-for="DiachiUser" class="form-control" style="border: solid 1px white;"/>
+                <input asp-for="DiachiUser" class="form-control" style="border: solid 1px white;" />
                 <span asp-validation-for="DiachiUser" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="UsernameUser" class="control-label"></label>
-                <input asp-for="UsernameUser" class="form-control" style="border: solid 1px white;"/>
+                <input asp-for="UsernameUser" class="form-control" style="border: solid 1px white;" />
                 <span asp-validation-for="UsernameUser" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="PasswordUser" class="control-label"></label>
-                <input asp-for="PasswordUser" class="form-control" style="border: solid 1px white;"/>
+                <input asp-for="PasswordUser" class="form-control" style="border: solid 1px white;" />
                 <span asp-validation-for="PasswordUser" class="text-danger"></span>
             </div>
             <div class="form-group form-check">
                 <label class="form-check-label">
-                    <input class="form-check-input" asp-for="TrangthaiUser" style="border: solid 1px white;"/> @Html.DisplayNameFor(model => model.TrangthaiUser)
+                    <input class="form-check-input" asp-for="TrangthaiUser" style="border: solid 1px white;" /> @Html.DisplayNameFor(model => model.TrangthaiUser)
                 </label>
             </div>
             <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" style="background-color:aqua; color:black; font-size:20px;"/>
+                <input type="submit" value="Create" class="btn btn-primary" style="background-color:aqua; color:black; font-size:20px;" />
             </div>
         </form>
     </div>
