@@ -7,6 +7,7 @@ using Microsoft.Extensions.Logging;
 using DoAnAsp.Models;
 using System.Diagnostics;
 using DoAnAsp.Areas.Admin.Data;
+using Microsoft.AspNetCore.Http;
 
 namespace DoAnAsp.Controllers
 {
@@ -32,6 +33,8 @@ namespace DoAnAsp.Controllers
             {
                 if(user[0].PasswordUser==PasswordUser)
                 {
+                    HttpContext.Session.SetString("username", user[0].UsernameUser);
+
                     return RedirectToAction("Index", "Home");
                 }
                 else
@@ -45,6 +48,7 @@ namespace DoAnAsp.Controllers
                 {
                     if(admin[0].Password==PasswordUser)
                     {
+                        HttpContext.Session.SetString("username", admin[0].Username);
                         var url = Url.RouteUrl("areas", new { controller = "SanPhamModels", action = "Index", area = "Admin" });
                         return Redirect(url);
                     }

@@ -25,7 +25,16 @@ namespace DoAnAsp
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+
             services.AddControllersWithViews();
+            services.AddSession(option =>
+            {
+                option.IdleTimeout = TimeSpan.FromSeconds(5000);
+                option.Cookie.HttpOnly = true;
+                option.Cookie.IsEssential = true;
+            }
+            );
+            services.AddSignalR();
             services.AddDbContext<DPContext>(option => option.UseSqlServer(Configuration.GetConnectionString("DPContext")));
         }
 
@@ -46,7 +55,7 @@ namespace DoAnAsp
             app.UseStaticFiles();
 
             app.UseRouting();
-
+            app.UseSession();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
