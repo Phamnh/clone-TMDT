@@ -7,10 +7,11 @@ using Microsoft.Extensions.Logging;
 using DoAnAsp.Models;
 using System.Diagnostics;
 using DoAnAsp.Areas.Admin.Data;
+using Microsoft.AspNetCore.Http;
 
 namespace DoAnAsp.Controllers
 {
-    public class LoginController: Controller
+    public class LoginController : Controller
     {
         private readonly DPContext _context;
 
@@ -28,10 +29,12 @@ namespace DoAnAsp.Controllers
         {
             var user = _context.user.Where(s => s.UsernameUser == UsernameUser).ToList();
             var admin = _context.admin.Where(s => s.Username == UsernameUser).ToList();
-            if (user.Count!=0)
+            if (user.Count != 0)
             {
-                if(user[0].PasswordUser==PasswordUser)
+                if (user[0].PasswordUser == PasswordUser)
                 {
+                    HttpContext.Session.SetString("username", user[0].UsernameUser);
+
                     return RedirectToAction("Index", "Home");
                 }
                 else
@@ -41,10 +44,11 @@ namespace DoAnAsp.Controllers
             }
             else
             {
-                if(admin.Count !=0)
+                if (admin.Count != 0)
                 {
-                    if(admin[0].Password==PasswordUser)
+                    if (admin[0].Password == PasswordUser)
                     {
+                        HttpContext.Session.SetString("username", admin[0].Username);
                         var url = Url.RouteUrl("areas", new { controller = "SanPhamModels", action = "Index", area = "Admin" });
                         return Redirect(url);
                     }
@@ -61,3 +65,4 @@ namespace DoAnAsp.Controllers
         }
     }
 }
+

@@ -8823,33 +8823,20 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\HP\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\Quoc Trung\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< Updated upstream
       "projectUniqueName": "C:\\Users\\Quoc Trung\\Documents\\GitHub\\clone-TMDT\\DoAnAsp\\DoAnAsp.csproj",
       "projectName": "DoAnAsp",
       "projectPath": "C:\\Users\\Quoc Trung\\Documents\\GitHub\\clone-TMDT\\DoAnAsp\\DoAnAsp.csproj",
       "packagesPath": "C:\\Users\\Quoc Trung\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Quoc Trung\\Documents\\GitHub\\clone-TMDT\\DoAnAsp\\obj\\",
-=======
-      "projectUniqueName": "C:\\Users\\HP\\Documents\\GitHub\\clone-TMDT\\DoAnAsp\\DoAnAsp.csproj",
-      "projectName": "DoAnAsp",
-      "projectPath": "C:\\Users\\HP\\Documents\\GitHub\\clone-TMDT\\DoAnAsp\\DoAnAsp.csproj",
-      "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\HP\\Documents\\GitHub\\clone-TMDT\\DoAnAsp\\obj\\",
->>>>>>> Stashed changes
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\"
-      ],
       "configFilePaths": [
-        "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\Quoc Trung\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
@@ -8860,7 +8847,6 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
           "projectReferences": {}
         }
       },
@@ -8872,7 +8858,6 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
-        "targetAlias": "netcoreapp3.1",
         "dependencies": {
           "Microsoft.EntityFrameworkCore.SqlServer": {
             "target": "Package",
@@ -8919,8 +8904,16 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Users\\Quoc Trung\\Documents\\GitHub\\clone-TMDT\\DoAnAsp\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using DoAnAsp.Areas.Admin.Data;
 using DoAnAsp.Areas.Admin.Models;
+using Microsoft.AspNetCore.Http;
 
 namespace DoAnAsp.Areas.Admin.Controllers
 {
@@ -23,7 +24,25 @@ namespace DoAnAsp.Areas.Admin.Controllers
         // GET: Admin/UserModels
         public async Task<IActionResult> Index()
         {
-            return View(await _context.user.ToListAsync());
+            try
+            {
+                var list = _context.admin.Where(s => s.Username == HttpContext.Session.GetString("username").ToString());
+                if (list.Count() != 0)
+                {
+                    ViewBag.Username = HttpContext.Session.GetString("username").ToString();
+                    return View(await _context.user.ToListAsync());
+                }
+                else
+                {
+                    var url = Url.RouteUrl(new { controller = "Home", action = "Index", area = "" });
+                    return Redirect(url);
+                }
+            }
+            catch (Exception e)
+            {
+                var url = Url.RouteUrl(new { controller = "Login", action = "Index", area = "" });
+                return Redirect(url);
+            }
         }
 
         // GET: Admin/UserModels/Details/5
