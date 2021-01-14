@@ -8823,19 +8823,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Admin\\.nuget\\packages\\": {}
+    "C:\\Users\\Quoc Trung\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Admin\\Documents\\GitHub\\clone-TMDT\\DoAnAsp\\DoAnAsp.csproj",
+      "projectUniqueName": "C:\\Users\\Quoc Trung\\Documents\\GitHub\\clone-TMDT\\DoAnAsp\\DoAnAsp.csproj",
       "projectName": "DoAnAsp",
-      "projectPath": "C:\\Users\\Admin\\Documents\\GitHub\\clone-TMDT\\DoAnAsp\\DoAnAsp.csproj",
-      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Admin\\Documents\\GitHub\\clone-TMDT\\DoAnAsp\\obj\\",
+      "projectPath": "C:\\Users\\Quoc Trung\\Documents\\GitHub\\clone-TMDT\\DoAnAsp\\DoAnAsp.csproj",
+      "packagesPath": "C:\\Users\\Quoc Trung\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Quoc Trung\\Documents\\GitHub\\clone-TMDT\\DoAnAsp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Quoc Trung\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -8847,7 +8847,6 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
           "projectReferences": {}
         }
       },
@@ -8859,7 +8858,6 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
-        "targetAlias": "netcoreapp3.1",
         "dependencies": {
           "Microsoft.EntityFrameworkCore.SqlServer": {
             "target": "Package",
@@ -8906,7 +8904,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
       }
     }
   }

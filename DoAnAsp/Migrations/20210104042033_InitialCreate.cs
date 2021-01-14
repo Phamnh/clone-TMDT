@@ -14,7 +14,7 @@ namespace DoAnAsp.Migrations
                     IdAdmin = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Username = table.Column<string>(maxLength: 20, nullable: false),
-                    Password = table.Column<string>(maxLength: 20, nullable: false),
+                    Password = table.Column<string>(maxLength: 100, nullable: false),
                     Hoten = table.Column<string>(maxLength: 30, nullable: true),
                     Sdt = table.Column<string>(nullable: true),
                     Email = table.Column<string>(nullable: true)
@@ -64,7 +64,7 @@ namespace DoAnAsp.Migrations
                     SdtUser = table.Column<string>(nullable: true),
                     DiachiUser = table.Column<string>(maxLength: 100, nullable: true),
                     UsernameUser = table.Column<string>(maxLength: 20, nullable: false),
-                    PasswordUser = table.Column<string>(maxLength: 20, nullable: false),
+                    PasswordUser = table.Column<string>(maxLength: 100, nullable: false),
                     TrangthaiUser = table.Column<bool>(nullable: false)
                 },
                 constraints: table =>

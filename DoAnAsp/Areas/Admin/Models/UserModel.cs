@@ -23,7 +23,7 @@ namespace DoAnAsp.Areas.Admin.Models
         public string UsernameUser { get; set; }
         [DataType(DataType.Password)]
         [Required(AllowEmptyStrings = false, ErrorMessage = "Please enter a valid password")]
-        [StringLength(20)]
+        [StringLength(100)]
         public string PasswordUser { get; set; }
         public bool TrangthaiUser { get; set; }
         public ICollection<HoaDonModel> hoadon { get; set; }

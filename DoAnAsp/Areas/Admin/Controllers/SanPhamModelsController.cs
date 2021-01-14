@@ -32,7 +32,7 @@ namespace DoAnAsp.Areas.Admin.Controllers
                 if (list.Count() != 0)
                 {
                     ViewBag.Username = HttpContext.Session.GetString("username").ToString();
-                    return View(await _context.sanpham.ToListAsync());
+                    return View(await _context.sanpham.Include(i => i.nhacungcap).Include(h => h.loaisp).ToListAsync());
                 }
                 else
                 {

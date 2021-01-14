@@ -15,7 +15,7 @@ namespace DoAnAsp.Areas.Admin.Views
         public string Username { get; set; }
         [DataType(DataType.Password)]
         [Required(AllowEmptyStrings = false, ErrorMessage = "Please enter a valid password")]
-        [StringLength(20)]
+        [StringLength(100)]
         public string Password { get; set; }
         [StringLength(30)]
         public string Hoten { get; set; }

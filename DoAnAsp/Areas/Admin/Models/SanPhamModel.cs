@@ -22,12 +22,14 @@ namespace DoAnAsp.Areas.Admin.Models
         public int Soluongton { get; set; }
         public int IdNCC { get; set; }
         [ForeignKey("IdNCC")]
+        public virtual NhaCungCapModel nhacungcap { get; set; }
         public int IdLSP { get; set; }
         [ForeignKey("IdLSP")]
+        public virtual LoaiSPModelcs loaisp { get; set; }
         public string Mota { get; set; }
         public bool Trangthai { get; set; }
         public ICollection<BinhLuanModel> binhluan { get; set; }
-        public virtual LoaiSPModelcs loasp {get; set;}
-        public virtual NhaCungCapModel nhacungcap { get; set; }
+        
+        
     }
 }

@@ -16,10 +16,11 @@ namespace DoAnAsp.Areas.Admin.Models
         public double Tongtien { get; set; }
         public int IdHD { get; set; }
         [ForeignKey("IdHD")]
+        public virtual HoaDonModel hoadon { get; set; }
         public int IdSP { get; set; }
         [ForeignKey("IdSP")]
         public bool Trangthai { get; set; }
-        public virtual HoaDonModel hoadon { get; set; }
+        
        
     }
 }

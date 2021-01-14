@@ -19,6 +19,7 @@ namespace DoAnAsp.Areas.Admin.Models
         [Required]
         public int IdUser { get; set; }
         [ForeignKey("IdUser")]
+        public virtual UserModel user { get; set; }
         [StringLength(100)]
         public string Diachi { get; set; }
         [Phone]
@@ -26,6 +27,6 @@ namespace DoAnAsp.Areas.Admin.Models
         public bool Trangthai { get; set; }
      
         public ICollection<ChiTietHoaDonModel> chitiethoadon { get; set; }
-        public virtual UserModel user { get; set; }
+        
     }
 }
