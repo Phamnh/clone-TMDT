@@ -8,6 +8,7 @@ using DoAnAsp.Models;
 using System.Diagnostics;
 using DoAnAsp.Areas.Admin.Data;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Http;
 
 namespace DoAnAsp.Controllers
 {
@@ -25,7 +26,8 @@ namespace DoAnAsp.Controllers
 
         public async Task<IActionResult> Index(int? id)
         {
-            if(id!=null)
+            ViewBag.user = HttpContext.Session.GetString("username");
+            if (id!=null)
             {
                 var ds = await _context.sanpham.ToListAsync();
                 var dss = ds.Where(x => x.IdLSP == id);

@@ -8,6 +8,7 @@ using Microsoft.Extensions.Logging;
 using DoAnAsp.Models;
 using DoAnAsp.Areas.Admin.Data;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Http;
 
 namespace DoAnAsp.Controllers
 {
@@ -22,6 +23,7 @@ namespace DoAnAsp.Controllers
 
         public async Task<IActionResult> Index()
         {
+            ViewBag.user = HttpContext.Session.GetString("username");
             return View(await _context.sanpham.ToListAsync());
         }
 
